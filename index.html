@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Siral.id</title>
+    <script>
+        var subjectObject={
+            "Uni Soviet":{
+            },
+            "North Korea":{
+            }
+        }
+        window.onload = function(){
+            var subjectSel = document.getElementById("subject");
+            for(var x in subjectObject){
+                subjectSel.options[subjectSel.options.length] = new Option(x, x); 
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="row">
+        <div class="col-50">
+            <div class="container" style="margin: 0 20%;">
+                <h4><i class="fa fa-arrow-left" style="color: grey;"></i> 
+                <img src="images/icon.PNG" alt="icon.PNG" width="7%"; style="margin-bottom: -10px;"> Powdur</h4>
+                <p style="color: grey; margin-bottom: -20px;" >Pure set</p>
+                <h1>$65.00</h1>
+                <img src="images/picture.PNG" alt="picture.jpg" width="80%" style="margin-top: 20px">
+    </div>
+    </div>
+
+
+    <!-- bagian kanan -->
+    <div class="col-50">
+        <div class="container">
+            <button class="btn"><i class="fa fa-apple"></i>Pay</button>
+    <div class="garis">
+        <h5 style="color: grey;">Or pay with card</h5>
+    </div>
+    <h3>Shipping information</h3>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email">
+    <label for="adrs">Shipping address</label>
+    <select name="subject" id="subject" class="select" style="margin-bottom:0px ;">
+    <option value="" selected="selected">United States</option></select>
+    <input type="text" id="name" name="name" placeholder="Name" style="margin-bottom: 0px;">
+    <input type="text" id="adrs" name="address" placeholder="address" >
+    <a href="#" style="color : grey;">Enter address manually</a> 
+
+    <h3>Payment details</h3>
+    <label for="ci">Card information</label>
+    <div class="input-container">
+        <input type="text" id="ci" name="Card Number" placeholder="1234 1234 1234" style="margin-bottom: 0; width: 70%;">
+        <div class="icon-container">
+            <i class="fa fa-cc-visa" style="color:navy;"></i>
+            <i class="fa fa-cc-amex" style="color:blue;"></i>
+            <i class="fa fa-cc-mastercard" style="color:red;"></i>
+            <i class="fa fa-cc-discover" style="color:orange;"></i>
+        </div>
+    </div>
+    <div class="row">
+    <div class="col-25">
+    <input type="text" id="exp-year" name="exp-year" placeholder="MM / YY">
+    </div>
+    <div class="col-25">
+    <input type="text" id="cvc" name="cvc" placeholder="CVC">
+    </div>
+    </div> 
+    </div>
+    <label>
+        <input type="checkbox" checked="checked" name="billing">Billing address is same as shipping
+    </label>
+    <input type="submit" value="Pay $65.00" class="btn" style="background-color: rgb(47, 42, 51); color: grey;">
+    </div>
+</div>
+</div>
+
+</body>
+</html>
